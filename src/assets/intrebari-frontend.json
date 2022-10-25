@@ -1,0 +1,139 @@
+{
+	"questions":[{
+		"questionText":"La ce este folosit HTML?",
+		"options":[{
+			"text": "Este folosit pentru structurarea paginilor web.",
+			"correct":"true"
+		},
+		{
+			"text":"Se refera la orice aspect al procesului de proiectare, al paginilor web, care apare sau are legatura directa cu browser-ul."
+			
+		},
+		{
+			"text":"Este folosit pentru a oferi interactivitate."
+		}]
+		
+	},
+	{
+		"questionText":"La ce este folosit CSS?",
+		"options":[{
+			"text":"Este folosit pentru prezentarea paginilor web.",
+			"correct":"true"
+		},
+		{
+			"text":"La integrarea functionalitatilor."
+		},
+		{
+			"text": "Este utilizat pentru a adauga interactivitate paginilor web."
+		}]
+		
+	},
+	{
+		"questionText":"Cum recunoaștem un marcaj?",
+		"options":[{
+			"text":"Se află între <>",
+            "correct":"true"
+		},
+		{
+			"text":"Se află între '' "
+		},
+		{
+			"text":"Se află între <-- -->"
+		}]
+		
+	},
+	{
+		"questionText":"Cum este scris un antet în HTML?",
+		"options":[{
+			"text":"<head></head>",
+			"correct":"true"
+		},
+		{
+			"text":"<title></title>"
+		},
+		{
+			"text":"<ol></ol>"
+		}]
+	},
+	{
+		"questionText":"Ce înseamnă HTML?",
+		"options":[{
+			"text":"Hypertext Markup Language",
+			"correct":"true"
+		},
+		{
+			"text":"Hyper Text MarkupLanguage"
+		},
+		{
+			"text":"Hypertext Mark-upLanguage"
+		}]
+	},
+	{
+		"questionText":"Ce înseamnă CSS?",
+		"options":[{
+			"text":"Cascading Style Sheets",
+			"correct":"true"
+		},
+		{
+			"text":"Cascade Style Sheets "
+		},
+		{
+			"text":"Casscade Stail Șits"
+		}]
+	},
+	{
+		"questionText":"La ce se foloește JavaScript?",
+		"options":[
+		{
+			"text":"La stilizarea paginii web."
+		},
+		{
+			"text":"La proiectarea paginii web."
+		},
+		{	"text":"La adăugarea funcționalităților paginii web.",
+			"correct":"true"}]
+	},
+	{
+		"questionText":"Ce sunt listele?",
+		"options":[{
+			"text":"Sunt formate din informatia nestructurata, textuala, care se scrie ca in orice document ASCII, dupa care este structurata prin includerea anumitor portiuni in marcatori simetrici si formatata prin stabilirea de atribute pentru anumiti marcatori"
+			
+			
+		},
+		{
+			"text":"Sunt enumerari de item-uri.",
+            "correct":"true"
+		},
+		{
+			"text":"Sunt containerele de date din tabel. "
+		}]
+	},
+	{
+		"questionText":"La ce este folosit un link?",
+		"options":[{
+			"text":"Permite utilizatorilor sa navigheze de la o pagina la alta.",
+			"correct":"true"
+		},
+		{
+			"text":"Este folosit pentru a afisa o pagina web in cadrul unei alte pagini web."
+		
+		},
+		{
+			"text":"Indica URL-ul fisierului care va prelua, pe partea de server, datele formularului."
+		}]
+	},
+	{
+		"questionText":"Ce rol are atributul src?",
+		"options":[{
+			"text":"Specifică adresa URL a unei imagini.",
+			"correct":"true"
+		},
+		{
+			"text":"Specifică un text alternativ pentru imagine și va fi afișat în cazul în care imaginea nu poate fi afișată."
+		},
+		{
+			"text":"Specifică înălțimea unei imagini."
+		}]
+	}]
+	
+}

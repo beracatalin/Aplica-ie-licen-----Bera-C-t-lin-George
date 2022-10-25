@@ -1,0 +1,138 @@
+{
+	"questions":[{
+		"questionText":"Ce este logica matematică?",
+		"options":[{
+			"text": "Logica simbolică în care afirmaţiile (pe care le vom numi propoziţii) sunt notate cu literele alfabetului.",
+			"correct":"true"
+		},
+		{
+			"text":"Afirmaţii cărora li se ataşează o valoare de adevăr."
+			
+		},
+		{
+			"text":"Un limbaj formal care conţine un alfabet, reguli de sintaxă, axiome şi o regulă de deducţie"
+		}]
+		
+	},
+	{
+		"questionText":"Conform teoremei 1 a consecinței logice...",
+		"options":[{
+			"text":"G este o consecinţă logică a lui F1,..,Fn dacă şi numai dacă formula F1^...^Fn->G este validă.",
+			"correct":"true"
+		},
+		{
+			"text":"G este o consecinţă logică a lui F1,..,Fn dacă şi numai dacă formula F1^...^Fn ^ ~G este inconsistentă."
+		},
+		{
+			"text": "G este adevărată atunci se spune că G este o consecinţă logică a lui F1,...,Fn, iar F1,..., Fn sunt axiome pentru G."
+		}]
+		
+	},
+	{
+		"questionText":"Conform teoremei 2 a consecinței logice...",
+		"options":[{
+			"text":"G este o consecinţă logică a lui F1,..,Fn dacă şi numai dacă formula F1^...^Fn->G este validă."
+		},
+		{
+			"text":"G este adevărată atunci se spune că G este o consecinţă logică a lui F1,...,Fn, iar F1,..., Fn sunt axiome pentru G."
+		},
+		{
+			"text":"G este o consecinţă logică a lui F1,..,Fn dacă şi numai dacă formula F1^...^Fn ^ ~G este inconsistentă.",
+			"correct": "true"
+		}]
+		
+	},
+	{
+		"questionText":"Cum se defineşte logica?",
+		"options":[{
+			"text":"Este ştiinţa demonstraţiei al cărui obiect este stabilirea condiţiilor corectitudinii gândirii, a formelor şi legilor generale ale raţionării corecte, conforme prin ordinea ideilor cu organizarea legică a realităţii obiective",
+			"correct":"true"
+		},
+		{
+			"text":"Tratarea formei şi structurii, ignorând conţinutul."
+		},
+		{
+			"text":"Cea mai mică unitate semantică."
+		}]
+	},
+	{
+		"questionText":"Ce este un Agent reflex simplu?",
+		"options":[{
+			"text":"Este agentul care selectează acţiunea pe care o returnează, bazându-se doar pe percepţia curentă, ignorând istoria de percepţii.",
+			"correct":"true"
+		},
+		{
+			"text":"Cea mai simplă strategie de căutare este căutarea in lăţime, numită şi breadthfirst search."
+		},
+		{
+			"text":"Cea mai complicată strategie de căutare este căutarea in lăţime, numită şi breadthfirst search."
+		}]
+	},
+	{
+		"questionText":"Conform legilor booleene...",
+		"options":[{
+			"text":"În orice teoremă din algebra booleană dacă se nlocuieşte v cu ^ şi invers, teorema rămâne adevărată.",
+			"correct":"true"
+		},
+		{
+			"text":"În orice teoremă din algebra booleană dacă se nlocuieşte v cu ^ şi invers, teorema devine adevărată."
+		},
+		{
+			"text":"În orice teoremă din algebra booleană dacă se nlocuieşte v cu ^ şi invers, teorema rămâne falsă."
+		}]
+	},
+	{
+		"questionText":"Conform logicii bivalente...",
+		"options":[
+		{
+			"text":"PL- propoziţii simple - tratate atomic, ca un tot unitar - se vor nota cu câte un simbol - litere mari sau mici de la mijlocul alfabetului P,Q,R,…, respectiv p,q,r,...."
+		},
+		{
+			"text":"PL clasic - orice propoziţie poate fi T sau F, dar neaparat amândouă deodată.."
+		},
+		{	"text":"PL clasic - orice propoziţie poate fi T sau F, dar nu amândouă deodată.",
+			"correct":"true"}]
+	},
+	{
+		"questionText":"Ce este o aserțiune în FOPL?",
+		"options":[{
+			"text":"Este o formulă în care toate variabilele sunt calificate, deci nu există nici o variabilă liberă.",
+			"correct":"true"
+			
+		},
+		{
+			"text":"Este o formulă în care toate variabilele sunt calificate, deci există o variabilă liberă."
+		},
+		{
+			"text":"Este o formulă în care toate variabilele sunt calificate, deci există doar o variabilă liberă."
+		}]
+	},
+	{
+		"questionText":"Ce este un predicat?",
+		"options":[{
+			"text":"Simbol prin care se notează relaţii sau funcţii definite pe elementele domeniului discursului şi care iau valorile adevărat (T) sau fals (F).",
+			"correct":"true"
+		},
+		{
+			"text":"Propoziţie care nu are argumente."
+		
+		},
+		{
+			"text":"Propoziţie care are argumente."
+		}]
+	},
+	{
+		"questionText":"Ce sunt constantele în FOPL?",
+		"options":[{
+			"text":"Termeni ce au o valoare fixată pentru un domeniu al discursului.",
+			"correct":"true"
+		},
+		{
+			"text":"Termeni ce pot lua diferite valori din domeniul discursului."
+		},
+		{
+			"text":"Termeni ce reprezintă relaţii univoce (funcţionale) definite pe domeniile discursului."
+		}]
+	}]
+	
+}

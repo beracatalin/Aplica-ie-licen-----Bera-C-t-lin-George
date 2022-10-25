@@ -1,0 +1,29 @@
+<div class="modal-container">
+	<div class="modal-close">
+		<button class="modal-btn-close" (click)="closeModal()">x</button>
+	</div>
+	<div  class="modal-title">
+		<h3><b>BAZE DE DATE</b></h3>
+	</div>
+	<div>
+	<div class="modal-body">
+	<p class="documentation"> &nbsp;&nbsp;&nbsp;&nbsp; La baza prelucrării datelor stau fişierele. Odată cu dezvoltarea informaticii, numărul acestora a crescut, ajungându-se ca într-o firmă să existe mai multe zeci sau sute de fişiere permanente şi temporare legate de gestiunea personalului, materialelor, producţiei, vânzărilor etc. Această creştere a avut o serie de dezavantaje, dintre care amintim: </p>
+	<br>
+	<ol class="list">
+	<li>redundanţa – este proprietatea unei informaţii de a se repeta nejustificat; de exemplu codul materialelor, care poate ajunge la 20-30 de cifre, se repetă în  majoritatea acestor fişiere, mărind nejustificat spaţiul fizic ocupat;</li>
+	<li>inconsistenţa – este legată de apariţia distorsionată a unor informaţii în diferite contexte; una dintre cauzele inconsistenţei este redundanţa, deoarece este suficient ca la o apariţie (copie) a informaţiei redundante, aceasta să fie introdusă greşit şi informaţia poate deveni inconsistentă;</li>
+	<li>validarea datelor – este clar că diferite aplicaţii care gestionează fişiere disparate pot valida datele diferit; nevalidarea uniformă a datelor poate duce la compromiterea întregului sistem de fişiere;</li>
+    <li>disponibilitatea şi securitatea datelor – reprezintă o problemă de asemenea foarte spinoasă. Datele aflându-se în fişiere disparate, acestea pot fi reţinute de proprietari, nefiind disponibile şi comunităţii utilizatorilor. De asemenea, neexistând un control centralizat asupra lor, nu se poate asigura securitatea acestora.</li>
+	</ol>
+	<br>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; O primă definiţie a bazelor de date este [Niţchi&Racoviţan04]: baza de date este un sistem integrat, coerent şi partajat de fişiere. Integrat - înseamnă că baza de date poate fi gândită ca o unificare a mai multor fişiere distincte de date, unde fiecare utilizator are viziunea sa proprie asupra datelor. Partajat - înseamnă că părţi distincte din baza de date pot fi folosite de către mai mulţi utilizatori. Coerent – înseamnă că se asigură caracterul neredundant şi coerent al datelor.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Gestionarea datelor dintr-o bază de date este asigurată de un sistem de gestiune a bazelor de date sau SGBD (în limba engleză DBMS - Data Base Management System).</p>
+	<br>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;Nivelul intern (baza de date fizică) defineşte baza de date ca fiind o colecţie de fişiere, conţinând datele din cadrul bazei de date, la care se adaugă şi alte structuri auxiliare de date şi un set de programe, care interacţionează cu sistemul de operare pentru îmbunătăţirea managementului bazei de date. La acest nivel structura bazei de date se concretizează în schema internă. Aici apare independenţa faţă de căile de acces, adică utilizatorul nu trebuie să fie preocupat de organizarea şi modul de acces la date la nivel fizic</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;Nivelul conceptual este nivelul imediat superior celui fizic, datele fiind privite prin prisma semanticii lor, respectiv a conţinutului şi relaţiilor cu alte date. Acesta este şi primul nivel de abstractizare a lumii reale, având ca obiectiv principal modelarea realităţii existente prin definirea şi descrierea unităţilor logice cu care se lucrează şi a legăturilor dintre acestea. Această schemă este descrisă în general de administratorul bazei de date, el fiind singurul care cunoaşte şi manipulează schema conceptuală a bazei de date, degrevând utilizatorii de cunoaşterea întregii structuri a bazei de date. </p>
+	<p class="documentation">O formulare mai clară a definiţiei anterioare este: o relaţie este în 3NF dacă este în 2NF şi nu există dependenţe funcţionale între atributele care nu fac parte din cheie.</p>
+	<p class="documentation">O a doua definiţie pentru forma a 3-a normală a fost dată de Boyce şi Codd în 1971; ea se numeşte forma BCNF sau Boyce-Codd Normal Form şi se defineşte astfel: o relaţie R este în BCNF dacă pentru orice mulţime de atribute A pentru care există  un atribut din C(A), unde C(A) este mulţimea atributelor din R care nu fac parte din A şi care depind funcţional de A, are loc proprietatea că orice atribut din R depinde funcţional de A.</p>
+	<p class="documentation">O a treia definiţie a formei a 3-a normale este cea dată de Sharman în 1975 şi se enunţă astfel: O relaţie este în 3NF dacă orice determinant este o cheie (primară sau candidat).</p>
+</div>
+</div>
+</div>

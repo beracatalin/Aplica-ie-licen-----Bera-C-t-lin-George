@@ -1,0 +1,154 @@
+{
+	"questions": [
+		{
+			"questionText": "Ce este o bază de date distribuită?",
+			"options": [
+				{
+					"text": "Reprezintă o colecţie de date integrate logic, însă repartizate fizic pe siturile unei reţele de calculatoare",
+					"correct": "true"
+				},
+				{
+					"text": "Este sistemul cu prelucrare distribuită, adică un sistem centralizat de baze de date"
+				},
+				{
+					"text": "Reprezintă un sistem de date."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este un SGBDD?",
+			"options": [
+				{
+					"text": "O reprezentare a obiectelor lumii reale şi a evenimentelor asociate lor",
+					"correct": "true"
+				},
+				{
+					"text": "Este un set de reguli de manipulare a datelor."
+				},
+				{
+					"text": "Este un set de reguli de structurare a datelor."
+				}
+			]
+		},
+		{
+			"questionText": "Ce sunt predicatele minterm?",
+			"options": [
+				{
+					"text": "Predicatele pe baza cărora se abordează problematica fragmentării orizontale.",
+					"correct": "true"
+				},
+				{
+					"text": "O descompunere de-a lungul atributelor unei relaţii."
+				},
+				{
+					"text": "Este o serie de dezavantaje."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este OLAP?",
+			"options": [
+				{
+					"text": "O imagine multidimensională, uşor de interpretat şi cât mai natural reprezentată."
+				},
+				{
+					"text": "E o tehnologie ce suportă facilităţi analitice asupra uneia sau mai multor surse de date.",
+					"correct": "true"
+				},
+				{
+					"text": "Depozit de date."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este wrapper-ul?",
+			"options": [
+				{
+					"text": "Cel mai popular concept, atunci când se vorbeşte despre interconectarea bazelor de date heterogene.",
+					"correct": "true"
+				},
+				{
+					"text": "Un proces în urma căruia informaţiile din bazele de date participante pot fi înglobate într-o singură definiţie coerentă acceptată de un sistem de baze de date federative."
+				},
+				{
+					"text": "O tabelă sau interogare definită în Access."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este MongoDB?",
+			"options": [
+				{
+					"text": "Este un SGBD NoSQL, gratuit, open-source, cross-platform.",
+					"correct": "true"
+				},
+				{
+					"text": "Un model relativ nou, bun pentru parcurgerea relaţiilor, dar nu pentru căutări generale."
+				},
+				{
+					"text": "Cel mai simplu model pentru date nestructurate. "
+				}
+			]
+		},
+		{
+			"questionText": "Câte tipuri de baze de date NoSQL există?",
+			"options": [
+				{
+					"text": "5"
+				},
+				{
+					"text": "10"
+				},
+				{
+					"text": "4",
+					"correct": "true"
+				}
+			]
+		},
+		{
+			"questionText": "Câte nivele de replicare avem în total?",
+			"options": [
+				{
+					"text": "4",
+					"correct": "true"
+				},
+				{
+					"text": "1"
+				},
+				{
+					"text": "0"
+				}
+			]
+		},
+		{
+			"questionText": "Ce este replicarea?",
+			"options": [
+				{
+					"text": "Presupune copierea unor fragmente în mai multe locaţii.",
+					"correct": "true"
+				},
+				{
+					"text": "Presupune ștergerea unor fragmente în mai multe locaţii."
+				},
+				{
+					"text":"Presupune înlocuirea unor fragmente în mai multe locaţii."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este o bază de date centralizată?",
+			"options": [
+				{
+					"text": "Este sistemul cu prelucrare distribuită (centralizat), în care avem o singură bază de date stocată pe nodul central.",
+					"correct": "true"
+				},
+				{
+					"text": "Acea bază de date distribuită în care toate fragmentele apar o singură dată."
+				},
+				{
+					"text": "O rezolvare parţială a acestor inconveniente ar fi utilizarea instantaneelor, adică imagini ale bazei de date care se actualizează periodic."
+				}
+			]
+		}
+	]
+}

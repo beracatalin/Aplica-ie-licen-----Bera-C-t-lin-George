@@ -1,0 +1,40 @@
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+.btn-outline-info{
+	float:inline-end;
+	transition: all .5s ease-in-out;
+}
+.btn-outline-info:hover{
+	cursor: pointer;
+}
+.btn-outline-danger:hover{
+	cursor: pointer;
+}
+.documentation{
+	margin: 0;
+	padding: 0;
+}
+.list{
+	list-style-type:circle;
+	margin: 0;
+}
+.title{
+	
+}
+.quick-sort{
+	list-style-type:decimal;
+}
+.btn-outline-danger{
+	position: relative;
+	left: 38vw;
+	transition: all .5s ease-in-out;
+}
+
+.text{
+	position: relative;
+	text-align: start;
+	font-weight: bold;
+}

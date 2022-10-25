@@ -1,0 +1,125 @@
+<div class="modal-container">
+	<div class="modal-close">
+		<button class="modal-btn-close" (click)="closeModal()">x</button>
+	</div>
+	<div class="modal-title">
+		<h3><b>BAZE DE DATE DISTRIBUITE</b></h3>
+	</div>
+	<div>
+		<div class="modal-body">
+			<p class="documentation"> &nbsp;&nbsp;&nbsp;&nbsp; O bază de date distribuită reprezintă o colecţie de
+				date integrate logic,
+				însă repartizate
+				fizic pe siturile3 unei reţele de calculatoare [Gardarin & Valduriez 1989],
+				[Lungu et al. 1995], [Connolly et al. 2001], [Messaoui 2001] etc.
+				Aşadar, o bază de date distribuită e un ansamblu de baze de date administrate de
+				diferite situri, dar care apar pentru utilizator ca o bază unică. Ele sunt proiectate sub forma
+				unor colecţii de date integrate, omogene sau nu, împrăştiate cu discernământ într-o reţea de
+				calculatoare sub forma unei baze de date globale. [Schmitt & Saake 2005]
+				În majoritatea cazurilor definiţiile surprind două elemente importante:
+				Integrarea logică. Se referă la aspectul că datele înmagazinate nu sunt simple
+				colecţii de fişiere. Ele reprezintă o structură bine organizată pe care utilizatorul – potrivit
+				unor principii ce vor fi enunţate ulterior – trebuie s-o perceapă ca făcând parte dintr-o singură
+				bază de date globală, la fel ca şi în cazul bazelor de date locale sau centralizate;
+				Repartizarea fizică. Relevă faptul că baza de date nu este stocată într-o singură
+				locaţie, precum în cazul bazelor de date locale şi sistemelor centralizate, ci este împărţită
+				între mai multe staţii de lucru. </p>
+			<br>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Nici acum şi niciodată nu vom putea spune că s-a epuizat cu totul acest domeniu.
+				Sistemele de Gestiune a Bazelor de Date Distribuite (SGBDD) au ca obiectiv
+				crearea unei „punţi” între „insulele de informaţii”. Ideea unui astfel de sistem este de a face
+				accesibile toate datele necesare funcţionării unei organizaţii, oriunde s-ar afla ele, şi de a le
+				răspândi fizic, dacă este cazul, în acele locaţii unde vor fi utilizate cel mai des. [Date 2005]
+				SGBDD-ul este o extensie software şi funcţională a sistemelor SGBD locale.
+				Definiţie: Un sistem de gestiune al bazelor de date distribuite reprezintă sistemul
+				software care permite gestiunea bazelor de date distribuite, făcând distribuirea fizică
+				transparentă pentru utilizatori [Gardarin & Valduriez 1989], [Connolly et al. 2001].
+				Atunci când se vorbeşte despre sisteme distribuite, cei mai utilizaţi termeni sunt:
+				fragmentare, alocare şi replicare.</p>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;Predicatele pe baza cărora se abordează problematica fragmentării orizontale sunt
+				predicatele minterm. Ele sunt conjuncţii de predicate simple sau negaţii ale acestora. 
+			</p>
+			<br>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;În ceea ce priveşte aspectul semantic al acestui tip de predicate, putem spune că
+				unele sunt fără înţeles. Nu este cazul nostru, decât dacă am fi construit predicate minterm şi
+				între p1 şi p2, respectiv între p3, p4 şi p5. Un alt aspect se referă la faptul că unele predicate
+				minterm se suprapun (de exemplu m1 cu m4). Mai mult, pot să apară contradicţii în cazul unui
+				astfel de predicat, ceea ce ar avea drept urmare constituirea unui fragment vid. Spre exemplu,
+				un predicat simplu ar referi studenţii cu numărul matricol între 8.000 şi 10.000, iar un altul
+				studenţii din anul 3. Întâmplător, chiar aceşti studenţi din anul 3 au numerele matricole chiar
+				între intervalele stabilite. Acest lucru va conduce la eliminarea a două predicate minterm.
+				Mai mult, în acest caz particular, cele două predicate sunt echivalente.</p>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;OLAP este o tehnologie ce suportă facilităţi analitice asupra uneia sau mai multor
+				surse de date. În general, sistemele OLAP implică analiza datelor ce-şi au originea în baze
+				de date tradiţionale, dar au fost ulterior transformate în structuri multidimensionale pentru o
+				vizualizare şi o analiză mai facilă. De aceea, majoritatea instrumentelor OLAP au ca
+				platformă sistemele de gestiune a bazelor de date multidimensionale (MDDBMS20), interfaţa
+				cu utilizatorul fiind personalizată
+				Instrumente OLAP multidimensionale sunt cele mai intuitive, mai fiabile, dar şi cele
+				mai costisitoare material instrumente de prelucrare analitică. Sunt cunoscute în literatura de
+				specialitate sub acronimul MOLAP. Ele sunt destinate în rezolvarea unor interogări care
+				furnizează răspunsuri multiple, facilitând utilizatorului capacitatea de analiză, sinteză şi
+				comparaţie. Atunci când vrem să aflăm care sunt mediile generale ale studenţilor facultăţii
+				pe ani de studiu, semestriale şi anuale, pe specialităţi în vederea comparării rezultatelor cu
+				situaţiile din anii precedenţi, cel mai bine e să apelăm la baze de date multidimensionale.
+				Ulterior putem să facem comparaţii cu rezultatele obţinute de facultăţile de profil din ţară, de
+				stat sau particulare, în cadrul cărora întâlnim secţii similare. Sau, putem să agregăm
+				rezultatele în vederea creării premiselor de comparabilitate pe o anumită perioadă a
+				rezultatelor cu celelalte facultăţi ale universităţii. </p>
+			<p class="documentation">Cel mai popular concept, atunci când se vorbeşte despre interconectarea bazelor de
+				date heterogene, este wrapper-ul, uneori fiind cunoscut şi cu denumirea de mediator.
+				Wrapper-ele sunt nişte adaptoare, nişte straturi software intermediare ce transparentizează
+				diferitele nivele ale heterogenităţii. Heterogenitatea fizică poate fi împărţită în următoarele
+				subcategorii: heterogenitate de hardware, heterogenitatea sistemelor de operare,
+				heterogenitatea modelelor de date, heterogenitate de limbaje de interogare,
+				heterogenitatea limbajelor de programare.</p>
+			<p class="documentation">MongoDB – Este un SGBD NoSQL, gratuit, open-source, cross-platform, ce gestionează
+				baze de date tip document cu schemă dinamică în format Binary JavaScript Object
+				Notation (BSON, derivat din JSON).
+				Acesta este distribuit de către compania MongoDB Inc (2013), anterior denumită
+				10gen.</p>
+			<p class="documentation">Replicarea – cunoscută în literatura de specialitate şi ca reproducere – presupune
+				copierea unor fragmente în mai multe locaţii. Într-o bază de date distribuită există mai multe
+				nivele de replicare. Astfel, avem:
+				Baze de date centralizate. Sunt sistemele cu prelucrare distribuită (centralizate), în
+				care avem o singură bază de date stocată pe nodul central. La fel avem un singur SGBD.
+				Caracterul local al referinţei este cel mai scăzut, deoarece doar nodul central poate face
+				accesări sau prelucrări locale. Securitatea, fiabilitatea şi disponibilitatea sunt scăzute şi
+				depind în cea mai mare măsură de nodul central. Costul comunicaţiei este ridicat;
+				Baze de date partiţionate, fragmentate sau nereplicate. Sunt acele baze de date
+				distribuite în care toate fragmentele apar o singură dată. Implementarea se face cu cel mai
+				scăzut cost al stocării. O astfel de bază de date nu oferă fiabilitate şi nici disponibilitate prea
+				ridicate, însă este mai mare decât în cazul sistemelor centralizate. Caracterul local al referinţei
+				este la un nivel acceptabil. Costurile de comunicaţie sunt mai moderate. Actualizările şi
+				consultările se fac eficient;
+				Baze de date replicate integral. Orice sit conţine câte o copie a întregii baze de
+				date. Caracterul local al referinţei, disponibilitatea, securitatea şi fiabilitatea sunt maxime.
+				Probleme întâmpinăm la costul ridicat al echipamentelor de stocare, comunicaţia aglomerată
+				în cazul actualizărilor. O rezolvare parţială a acestor inconveniente ar fi utilizarea
+				instantaneelor, adică imagini ale bazei de date care se actualizează periodic. Dezavantajul lor
+				este că nu întotdeauna oferă o situaţie actualizată, iar în momentul actualizării se generează
+				trafic mare pe reţea;
+				Baze de date replicate parţial sau selectiv. Anumite fragmente sunt replicate, altele
+				nu. Sunt replicate fie acele fragmente cu utilizare frecventă, fie relaţii întregi de dimensiuni
+				mici care nu merită să fie fragmentate, ci mai degrabă memorate pe fiecare sit. În această
+				ultimă situaţie intră şi acele relaţii sau fragmente cu actualizări sporadice. Această strategie
+				este o îmbinare a celor 3 enunţate anterior. Încearcă să le preia avantajele şi să le minimizeze
+				dezavantajele. De aceea aceasta se implementează cel mai adesea. Costurile de comunicaţie
+				şi de stocare sunt relativ reduse. Caracterul local al referinţei, securitatea, fiabilitatea şi
+				disponibilitatea sunt apropiate de maxim. [Connolly et al. 2001]</p>
+			<p class="documentation">Bazele de date NoSQL nu au schemă şi nu stochează date relaţionale. Ele ridică problematici
+				importante, legate de consistenţă, durabilitate/persistenţă şi gestiunea versiunilor.
+				La ora actuală există următoarele categorii de baze de date NoSQL:</p>
+				<ol class="list">
+					<li>Key-/Value-stores – cel mai simplu model pentru date nestructurate. Foarte eficient
+						şi flexibil. Dezavantaj: datele nu conţin descrierea lor.</li>
+					<li>Document databases – pentru depozite XML şi obiecte care se autodescriu. </li>
+					<li>Column-Oriented Databases (Baze de date pe coloane) – model foarte bun folosit
+						în cadrul depozitelor de date pentru date rarefiate. Putem avea coloane grupate şi
+						agregate.</li>
+					<li>Graf [Oracle 2012] – un model relativ nou, bun pentru parcurgerea relaţiilor, dar nu
+						pentru căutări generale.</li>
+				</ol>
+		</div>
+	</div>
+</div>

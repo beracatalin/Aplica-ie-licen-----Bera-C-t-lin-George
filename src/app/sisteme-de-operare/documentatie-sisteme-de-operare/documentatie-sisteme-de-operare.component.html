@@ -1,0 +1,63 @@
+<div class="modal-container">
+	<div class="modal-close">
+		<button class="modal-btn-close" (click)="closeModal()">x</button>
+	</div>
+	<div  class="modal-title">
+		<h3><b>SISTEME de OPERARE</b></h3>
+	</div>
+	<div>
+	<div class="modal-body">
+	<p class="documentation"> &nbsp;&nbsp;&nbsp;&nbsp; Un sistem de calcul modern este alcătuit dintr-unul sau mai multe procesoare, memorie principală, discuri, display, tastatură, display, interfețe de rețea și alte interfețe de intrare/ieșire. Toate aceste elemente împreună formează un sistem complex[TANENBAUM06]<br>&nbsp;&nbsp;&nbsp;&nbsp; Peste arhitectura hard a unui calculator este un program de bază numit și sistem de operare care are sarcină să administreze dispozitivele din sistem și să ofere programelor utilizatorilor modalități de interfațare mai simple cu structura hard. Structură hard împreună cu instrucțiunile în limbaj de asamblare alcătuiesc nivelul ISA (Instruction Set Arhitecture - Arhitectura setului de instrucțiuni) numit și limbaj mașină.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Sistemele de operare realizează două funcții de bază între care nu există nici o legătură: extinderea funcționalității mașinii şi gestionarea resurselor,ceea ce nu putem spune este care din aceste funcții este mai importantă. Prin funcția de extindere ascunde detalii neplăcute precum: întreruperile, timer-ele, gestiunea memoriei şi alte elemente de nivel scăzut. Tot funcția de extindere ascunde programatorului „adevărul” despre structură hard și prezintă numai partea frumoasă a fișierelor cu nume nu și cu octeți şi reprezintă o vedere de sus în jos a SO.<br>&nbsp;&nbsp;&nbsp;&nbsp; În abordarea de jos în sus este prezența funcția de gestionare a resurselor care are că sarcină să realizeze o alocare ordonată și controlată a proceselor, memoriilor și dispozitivelor de I/O în diversele programe scrise pentru ele. Administrarea resurselor include partajarea resurselor în timp şi spațiu (multiplexarea). Când este în timp programele sau utilizatorii le folosesc pe rând resursele (exemplu: tipărirea) formându-se o coadă SO este acela care spune cine urmează şi cât timp are alocat. Când este în spațiu fiecare client folosește o parte din resursa (exemplu: memoria principală este împărțită între mai multe programe, sau HDD este o altă resursa multiplexată în spațiu.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Procesul - este în fapt un program în execuţie. Fiecărui proces i se asociază un spaţiu de adrese, adică o listă de locaţii în memorie din care programul poate câţi sau în care poate scrie. Locaţiile cuprinse între două limite, una minimă (de obicei 0) şi una maximă. Spaţiul de adrese conţine programul executabil, datele programului şi stiva. Procesului i se asociază, de asemenea, un set de registre care cuprinde contorul program, indicatorul de stiva şi alte registre hard, precum şi diverse alte informaţii necesare rulării programului.[TANENBAUM06]<br>&nbsp;&nbsp;&nbsp;&nbsp; La multe SO toate informaţiile despre fiecare proces, altele decât cele aflate în propriul spaţiu de adrese, sunt memorate într-un tabel al sistemului de operare numit tabel de procese, care este un tablou de structuri pentru fiecare proces existent.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Pentru a implementa un proces a „SO foloseşte o tabelă (un vector de structuri) numit tabelă de procese cu o intrare pentru fiecare proces. Această intrare conţine informaţii despre: starea procesului, contorul program, indicatorul de stiva, alocarea memoriei, starea fișierelor deschise, detalii de contabilizare, şi planificare şi orice alte informaţii despre un proces, care trebuie salvate atunci când procesul comută între stările în execuţie, gata de execuţie şi blocat, astfel încât să poată fi repornit mai târziu ca şi cum nu ar fi fost oprit niciodată.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Firele de execuţie în sistemele de operare tradiţionale, fiecare proces are un spaţiu de adrese şi un singur fir de control. Dar de cele mai multe ori este de dorit existenţa mai multor fire de control în acelaşi spaţiu de adrese rulând pseudo-paralel, că şi cum ar fi procese separate(cu excepţia partajării spaţiului de adrese).<br>&nbsp;&nbsp;&nbsp;&nbsp;Un proces este că o grupare de resurse înrudite şi are spaţiu de adrese ce conţine textul programului şi date, precum şi alte resurse. Aceste resurse pot include fişiere deschise, procese copil, semnale de alarmă în aşteptare, rutine de tratare a semnalelor, informaţii de contabilizare şi altele. Acestea pot fi gestionate uşor prin gruparea lor sub formă de proces.<br>&nbsp;&nbsp;&nbsp;&nbsp; Firul de execuţie (thread) are un contor de program care ţine evidenţa următoarei instrucţiuni de executat, totodată deţine şi registre care ţin variabilele curente de lucru. Are de asemenea o stiva care conţine istoricul execuţiei, cu un cadru pentru fiecare procedura apelată din care nu s-a revenit încă. Deşi un fir de execuţie trebuie să ruleze într- un proces,firul şi procesul sunt concepte diferite şi pot fi tratate separat. Procesele sunt utilizate pentru a grupă resurse, în timp ce firele de execuţie sunt entităţi planificate pentru execuţie în cadrul UCP (unitate centrală de procesare).<br>&nbsp;&nbsp;&nbsp;&nbsp; Modul de lucru al firelor de execuţie este: partajează spaţiul de adrese, fişiere deschise şi ale resurse sau partajează memoria fizică , discurile, imprimantele şi alte resurse.<br>&nbsp;&nbsp;&nbsp;&nbsp; Prin comutarea între mai multe procese, sistemul oferă iluzia unor procese secvenţiale separate care se execută în paralel. Programarea cu fire de execuţie multiple funcţionează în acelaşi mod: UCP comută rapid între firele de execuţie oferind iluzia că acestea rulează în paralel, deşi pe o UCP mai lentă decât pe cea reală. În cazul unui proces cu trei fire de execuţie, toate efectuând calcule, acestea păr să se execute în paralel, fiecare pe o UCP cu o viteză de trei ori mai mică decât a UCP reale.</p> 
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp; Situaţiile în care două sau mai multe procese citesc şi scriu date partajate şi rezultatul final depinde de cine ce execută exact când, se numesc condiţii de cursă (race conditions). Rezolvarea acestora o reprezintă excluderea mutuală (mutual exclusion), adică o cale prin care să fim asiguraţi că dacă un proces foloseşte o variabila partajată sau un fişier, celelalte procese nu vor putea face acelaşi lucru. Pentru a avea o soluţie bună trebuie îndeplinite patru condiţii:</p>
+	<ol class="list">
+	<li>oricare două procese nu se pot afla simultan în regiunile lor critice;</li>
+	<li>nici un fel de presupunere nu se poate face asupra vitezelor sau numărului de UCP-uri;</li>
+	<li>nici un proces care rulează în afara regiunii lui critice nu poate bloca alte procese;</li>
+	<li>nici un proces nu trebuie sa aștepte la infinit pentru a intra în regiunea lui critică.</li>
+	</ol>
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp; Firul de execuţie (thread) are un contor de program care ţine evidenţa următoarei instrucţiuni de executat,
+		totodată deţine şi registre care ţin variabilele curente de lucru. Are de asemenea o stiva care conţine istoricul execuţiei,
+		cu un cadru pentru fiecare procedura apelată din care nu s-a revenit încă. Deşi un fir de execuţie trebuie să ruleze întrun proces,firul şi procesul sunt concepte diferite şi pot fi tratate separat. Procesele sunt utilizate pentru a grupă resurse,
+		în timp ce firele de execuţie sunt entităţi planificate pentru execuţie în cadrul UCP (unitate centrală de procesare).
+		 Modul de lucru al firelor de execuţie este: partajează spaţiul de adrese, fişiere deschise şi ale resurse sau
+		partajează memoria fizică , discurile, imprimantele şi alte resurse.
+		 Prin comutarea între mai multe procese, sistemul oferă iluzia unor procese secvenţiale separate care se
+		execută în paralel. Programarea cu fire de execuţie multiple funcţionează în acelaşi mod: UCP comută rapid între
+		firele de execuţie oferind iluzia că acestea rulează în paralel, deşi pe o UCP mai lentă decât pe cea reală. În cazul unui
+		proces cu trei fire de execuţie, toate efectuând calcule, acestea păr să se execute în paralel, fiecare pe o UCP cu o
+		viteză de trei ori mai mică decât a UCP reale.  </p>
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp; Interblocările – sunt situaţiile când două sau mai multe procese interacționează, şi se ajunge la situaţii conflictuale din care nu mai pot ieşi(exemplu: ca şi în traficul rutier dintr-o intersecţie).
+Dispozitivele de I/O – sunt acele dispozitive care preiau intrări şi generează ieșiri. La ce ar fi bun un calculator dacă utilizatorii n-ar putea să-i „spună” ce să facă şi n-ar putea prelua rezultatele activităţii solicitate.
+Fişier - un sistem de administrare al fişierelor constă într-o asociaţie de date abstracte necesare pentru memorarea, organizarea ierarhică, manipularea, accesul şi recuperarea informaţiilor stocate într-un sistem de calcul. Cele mai familiare sisteme de operare folosesc pentru memorarea informaţiilor un şir de blocuri de dimensiune fixă, numite de obicei sectoare, de regulă, de 512 octeţi fiecare. Sistemul de operare este responsabil cu organizarea acestor blocuri de date în fişiere şi directoare şi controlul sectoarelor care aparţin unor fişiere sau sunt libere.
+Sistemul de fişierele conţine directoare sau foldere şi fişiere acestea fiind administrate, de regulă, prin asocierea numelui lor la un tabel de indexare, în stilul FAT pentru DOS sau INODE pentru UNIX. Structura folderelor poate fi liniară sau ierarhizată, situaţie în care folderele conţin şi subfoldere. Unele sisteme folosesc nume structurate de fişiere cu o sintaxă specială pentru extensie şi număr de versiune; alte sisteme folosesc drept nume de fişiere şiruri simple de caractere, metadatele (diverse proprietăţi ale fişierelor) fiind memorate în altă parte. [Silberschatz04]
+Sistemele de fişiere se pot clasifica în: sisteme de fişiere pe disc, sisteme de fişiere de reţea şi sisteme de fişiere cu destinaţie specială. Un sistem al fişiere pe disc este destinat memorării fişierelor pe un disc care este direct sau indirect legat la un calculator.
+Cele mai cunoscute astfel de sisteme, în ordine alfabetică, sunt:
+<ol class="list">
+	<li>	EXT2 (second extended file system) este folosit de majoritatea sistemelor de operare din familia LINUX. </li>
+	<li>	EXT3 (third extended file system) este o perfecţionare a lui EXT2 în sensul monitorizării în diverse jurnale a tuturor activităţilor efectuate; are tendinţa de a înlocui EXT2 dar încă are erori. </li>
+	<li>	FAT (File Allocation Table) este sistemul de fişiere de bază dezvoltat pentru DOS şi Windows; este considerat cel mai simplu şi, datorită popularităţii sale, este cel mai folosit pentru discurile flexibile.
+		FAT este principalul sistem de administrare al fişierelor dezvoltat pentru DOS şi Windows. Sistemul FAT este considerat relativ simplu, acesta fiind unul din motivele pentru care este cel mai popular format pentru discurile flexibile. Este suportat, virtual, de multe sisteme de operare şi adesea este folosit pentru distribuirea informaţiilor între mai multe sisteme de operare instalate pe acelaşi calculator într-un mediu multibooting.
+		FAT a fost dezvoltat de mult timp, acesta fiind unul din motivele pentru care astăzi este destul de criticat:
+		FAT induce în timp o fragmentare importantă a fişierelor pe disc, aceasta având drept consecinţă scăderea
+		vitezei de accesare a fişierelor;
+		FAT nu păstrează informaţii redundante necesare pentru recuperarea datelor în cazul unei defecţiuni a
+		sistemului; într-adevăr, există o copie a tabelului de alocare însă aceasta, de cele mai multe ori nu poate rezolva
+		problemele apărute;
+		FAT nu dispune de nici un mecanism pentru prevenirea accesului neautorizat la fişiere, atributele asociate
+		fişierelor fiind minimale;
+		primele versiuni de FAT aveau limitate numărul de caractere pentru numele şi extensia fişierului (8+3); prin
+		VFAT, o variantă modernizată, s-a extins totuşi la 255 numărul de caractere al numelui şi extensiei;
+		organizarea, prin clustere2 de mari dimensiuni, iroseşte spaţiul pe discurile de mare capacitate, spaţiu
+		inaccesibil sistemului dar accesibil unor aplicaţii perfide; spaţiul respectiv este denumit slack file.
+		FAT a debutat o dată cu DOS 1.0 în 1983. Varianta iniţială era destinată numai discurilor flexibile şi nu
+		admitea existenţa directoarelor. </li>
+	</ol>
+	
+</div>

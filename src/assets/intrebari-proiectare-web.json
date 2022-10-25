@@ -1,0 +1,138 @@
+{
+	"questions":[{
+		"questionText":"Ce se înțelege prin server de web?",
+		"options":[{
+			"text": "Este un daemon care acceptă conexiuni conform protocolului HTTP, răspunzând cererilor recepţionate de la clienţi.",
+			"correct":"true"
+		},
+		{
+			"text":"Reprezintă dezvoltarea unui soft colaborativ care urmăreşte cererea şi utilizarea unui Web Server puternic şi robust."
+			
+		},
+		{
+			"text":"Este un protocol de tip cerere-răspuns."
+		}]
+		
+	},
+	{
+		"questionText":"Ce reprezintă proiectul Apache?",
+		"options":[{
+			"text":"Reprezintă dezvoltarea unui soft colaborativ care urmăreşte cererea şi utilizarea unui Web Server puternic şi robust.",
+			"correct":"true"
+		},
+		{
+			"text":"Este un protocol de tip cerere-răspuns."
+		},
+		{
+			"text": "Este o procedură apelată din care nu s-a revenit încă."
+		}]
+		
+	},
+	{
+		"questionText":"Ce este un browser?",
+		"options":[{
+			"text":"Este un program folosit la afişarea de conţinut web.",
+            "correct":"true"
+		},
+		{
+			"text":"Este un software, un program de sine stătător, un executabil cu o funcţie bine stabilită"
+		},
+		{
+			"text":"Este un program care rulează, în general, pe un calculator centralizator sau aflat la distanţă, furnizând sau oferind informaţii/servicii clienţilor. "
+		}]
+		
+	},
+	{
+		"questionText":"Ce este MySQL?",
+		"options":[{
+			"text":"Este cel mai popular sistem de management pentru baze de date relaţionale deoarece este open-source.",
+			"correct":"true"
+		},
+		{
+			"text":"Este un program care rulează pe un calculator."
+		},
+		{
+			"text":"Este un limbaj de scripting."
+		}]
+	},
+	{
+		"questionText":"Care este efectul funcţie strcmp()?",
+		"options":[{
+			"text":"Are rolul de a compara caracter cu caracter cele două şiruri de caractere primite ca parametru.",
+			"correct":"true"
+		},
+		{
+			"text":"Are rolul de a șterge caracter cu caracter cele două şiruri de caractere primite ca parametru."
+		},
+		{
+			"text":"Are rolul de a adăuga caracter cu caracter cele două şiruri de caractere primite ca parametru."
+		}]
+	},
+	{
+		"questionText":"Care este efectul funcţie substr()?",
+		"options":[{
+			"text":"Are rolul de a returna un subşir, din şirul primit ca parametru începând cu poziţia n şi având lungimea m, în caz că m este specificat.",
+			"correct":"true"
+		},
+		{
+			"text":"Are rolul de a șterge un subşir, din şirul primit ca parametru începând cu poziţia n şi având lungimea m, în caz că m este specificat."
+		},
+		{
+			"text":"Are rolul de a modifica un subşir, din şirul primit ca parametru începând cu poziţia n şi având lungimea m, în caz că m este specificat."
+		}]
+	},
+	{
+		"questionText":"Ce conține o constantă în PHP?",
+		"options":[
+		{
+			"text":"Două tipuri și două valori."
+		},
+		{
+			"text":"O valoare."
+		},
+		{	"text":"Un tip și o valoare.",
+			"correct":"true"}]
+	},
+	{
+		"questionText":"Ce semnifică semnul %?",
+		"options":[{
+			"text":"Restul împărțirii",
+			"correct":"true"
+			
+		},
+		{
+			"text":"Adunare"
+		},
+		{
+			"text":"Împărțire"
+		}]
+	},
+	{
+		"questionText":"Ce reprezintă semnul *?",
+		"options":[{
+			"text":"Înmulțire",
+			"correct":"true"
+		},
+		{
+			"text":"Scădere."
+		
+		},
+		{
+			"text":"Împărțire"
+		}]
+	},
+	{
+		"questionText":"Ce reprezintă semnul +?",
+		"options":[{
+			"text":"Adunare",
+			"correct":"true"
+		},
+		{
+			"text":"Scădere"
+		},
+		{
+			"text":"Restul împărțirii"
+		}]
+	}]
+	
+}

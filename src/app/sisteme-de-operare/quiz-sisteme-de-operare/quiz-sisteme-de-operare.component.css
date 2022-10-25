@@ -1,0 +1,17 @@
+.container{
+	margin: 0;
+	padding: 0;
+}
+.quiz{
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+	border-bottom: 1px outset gray;
+	background:linear-gradient(#06beb6, #48b1bf);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	width: 100vw;
+}
+.btn-outline-primary{
+	position: relative;
+	left:15vw;
+}

@@ -1,0 +1,30 @@
+.quiz-title{
+	font-family: 'Times New Roman', Times, cursive;
+}
+.welcome{
+	font-style: italic;
+}
+.remaining{
+	font-style: italic;
+}
+.card{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.card li:hover{
+	border: 1px solid blue;
+	cursor: pointer;
+}
+ol{
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+.fail{
+	width: 12vw;
+position: relative;
+top: 42vh;
+height: 7vh;
+}

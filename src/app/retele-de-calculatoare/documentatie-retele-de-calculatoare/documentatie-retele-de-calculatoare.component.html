@@ -1,0 +1,131 @@
+<div class="modal-container">
+	<div class="modal-close">
+		<button class="modal-btn-close" (click)="closeModal()">x</button>
+	</div>
+	<div class="modal-title">
+		<h3><b>REȚELE DE CALCULATOARE</b></h3>
+	</div>
+	<div>
+		<div class="modal-body">
+			<p class="documentation"> &nbsp;&nbsp;&nbsp;&nbsp; O reţea este compusă în principal din noduri şi legături(conexiuni), putând fi asimilată cu
+                un graf. Nodurile sunt elementele de comutare în reţea, adică sunt: componente care trimit date,
+                recepţionează aceste date, precum şi elementele intermediare care retransmit aceste date. Intre
+                noduri există legături/conexiuni (a se vedea anexele 1, 2 şi 3). Intrucât nodurile şi conexiunile
+                sunt elemente complexe, care au multe funcţii, se realizează gruparea acestor funcţii în
+                straturi/nivele ierarhice. Pentru aceste straturi/nivele se descriu funcţiile de reţea, modul lor de
+                implementare şi protocoalele folosite. In subcapitolul de mai jos se vor enumera principalele
+                straturi folosite în reţele şi se vor descrie funcţiile lor. Unul din cele mai importante concepte
+                în/din reţele este protocolul.
+                 </p>
+			<br>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Un protocol ( din punct de vedere al reţelelor de calculatoare ) este un set de reguli care
+                gestionează modul în care două noduri dintr-o reţea schimbă informaţii, la acelaşi nivel. O
+                stivă sau o suită de protocoale reprezintă un grup de protocoale ce comunică între ele prin
+                funcţii riguros definite.</p>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;Aşa cum am menţionat mai sus, datorită complexităţii nodurilor şi legăturilor realizate prin
+                Noţiuni privind arhitectura si securitatea retelelor de calculatoare
+                reţele ( care conţin elemente hard, soft şi comunicaţii), pentru structurarea funcţionalităţilor pe
+                care trebuie să le realizeze/îndeplinească elementele componente ale reţelelor, se foloseşte
+                gruparea funcţiilor în seturi relativ, omogene care sunt realizate de straturi/nivele cu funcţii bine
+                determinate.
+                Modelul de referinţă ISO/OSI descrie şapte nivele funcţionale.
+                 
+			</p>
+			<br>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;Funcţia primară constă în dirijarea pachetelor de date de la sursă la destinaţie. Nivelul
+                inferior numit protocol de acces la reţea(NAP) este echivalent cu primele două nivele(fizic şi
+                legătură de date) din ierarhia OSI. In legătură cu protocolul IP se află protocoalele de la nivelul
+                superior TCP şi UDP care se situează la nivelul transport din ierarhia OSI. TCP înseamnă protocol
+                de control al transmisiei şi este un protocol orientat pe conexiune; funcţia primară a acestui nivel
+                este schimbul corect de pachete de date între nodurile reţelei, adică corectarea erorilor şi
+                secvenţierea transportului. Fluxul de octeţi poate fi în ambele sensuri, deci full-duplex.
+                UDP este un protocol de tip datagramă care lucrează fără stabilire de conexiune,
+                transmiţând date între două procese. Este un protocol mai puţin sigur, neexistând nici o garanţie
+                că datagramele UDP vor ajunge la destinaţia dorită. ICMP este un protocol utilizat pentru tratarea
+                erorilor şi a informaţiilor de control, între calculatoarele gazdă şi porţile de interconectare care
+                sunt responsabile de transmiterea pachetelor de date de la calculatorul sursă la calculatorul
+                destinaţie, cele două fiind situate în reţele total diferite. Mesajele ICMP sunt transmise utilizând
+                pachete IP şi sunt generate şi procesate de softul de reţea şi nu de către aplicaţiile utilizator.
+                ARP(Address Resolution Protocol) este un protocol de rezoluţie a adreselor, făcând o
+                echivalare între o adresă Internet ( IP ) şi o adresă hard ( MAC ). Acest protocol, ca şi RARP, nu
+                este utilizat în toate reţelele pentru că numai unele reţele au nevoie de el(de exemplu reţelele
+                ETHERNET).
+                RARP( Reverse Address Resolution Protocol) este un protocol care face legătura între o
+                adresă hard (MAC) şi o adresă Internet (IP).
+                EGP este un protocol folosit pentru legătura externă a porţilor de interconectare.</p>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;IGP(RIP) este un protocol de rutare distribuit, care este bazat pe algoritmul DVA (distance
+                vector algorithm).
+                OSPF este un protocol care foloseşte calea cea mai scurtă pentru transmiterea datelor şi
+                este folosit de către varianta ISO a protocolului IP. Utilizarea protocoalelor TCP/IP în opoziţie cu
+                nivelele OSI se datorează faptului că ele sunt larg răspândite, devenind un standard "de facto".
+                Principalele protocoale la nivel aplicaţie sunt: 
+                 </p>
+                 <ol class="list">
+                    <li><b>Telnet</b>-protocol pentru legarea de calculatoare aflate la distanţă; </li>
+                    <li><b>SSH</b>- protocol pentru legarea securizată de calculatoare aflate la distanţă;</li>
+                    <li><b>FTP</b>-protocol pentru transferul fişierelor;</li>
+                    <li><b>HTTP</b>-protocol pentru accesarea documentelor Web;</li>
+                    <li><b>HTTPS</b>-protocol securizat pentru accesarea documentelor Web;</li>
+                    <li><b>DNS</b>-protocol pentru nume de domenii;</li>
+                    <li><b>SMTP</b>-protocol pentru poşta electronică;  </li>
+                    <li><b>SIP</b>- Session Initiation Protocol( pentru VoIP);</li>
+                    <li><b>SNMP</b>-protocol pentru gestionarea reţelei.</li>
+                 </ol>
+			<p class="documentation">Procesul de creare a pachetelor începe la nivelul aplicaţie al modelului OSI, acolo unde
+                sunt generate datele. Informaţia care urmează a fi transmisă în reţea porneşte de la nivelul
+                aplicaţie şi “coboară” prin toate cele şapte niveluri.
+                La fiecare nivel, datelor le sunt adăugate informaţii referitoare la nivelul respectiv. Aceste
+                informaţii se adresează nivelului echivalent de pe calculatorul receptor. De exemplu,
+                informaţiile adăugate de nivelul legătură de date din calculatorul sursă vor fi citite de nivelul
+                legătură de date din calculatorul receptor.
+                La nivelul transport, blocul de date iniţial este fragmentat în pachete. Structura pachetelor este
+                determinată de protocolul folosit de cele două calculatoare.
+                Atunci când pachetele ajung la nivelul transport, se adaugă informaţii referitoare la
+                succesiunea datelor, care vor preciza calculatorului receptor modul de reasamblare a datelor
+                din pachete.Când pachetele trec şi de nivelul fizic, fiind transferate pe canalul de comunicaţie,
+                ele conţin informaţii despre fiecare din celelalte şase niveluri.</p>
+			<p class="documentation">Inceputul cadrului sau preambulul este, de obicei, de 8 octeţi, fiecare octet
+                conţinând şablonul de biţi 10101010.</p>
+			<p class="documentation">Cadrul conţine două adrese, una pentru destinaţie şi una pentru sursă. Câmpul tip
+                specifică procesul căruia îi este destinat cadrul. Altfel spus, identifică protocolul de nivel reţea
+                folosit. Dacă este folosit câmpul lungime, atunci sfârşitul de cadru nu mai este necesar din
+                pricina faptului că acest câmp lungime precizează exact câţi octeţi mai sunt până la sfârşitul
+                cadrului. Apoi urmează datele, până la 1500 de octeţi (această valoare a fost limitată de faptul
+                că la data creării standardelor memoria RAM era foarte scumpă).
+                In afara faptului că există o lungime maximă a cadrelor, există şi o lungime minimă a cadrelor,
+                pentru a facilita distingerea cadrelor valide de reziduuri (cele provenite în urma coliziunilor).
+                Standardul Ethernet cere ca toate cadrele valide să aibă cel puţin 64 de octeţi. Dacă porţiunea
+                de date dintr-un cadru este mai mică decât lungimea minimă acceptată, este folosit câmpul de
+                completare.
+                Pe măsură ce o companie se dezvoltă, reţeaua acesteia se extinde, ajungând până la
+                urmă să nu mai facă faţă sarcinilor. Acest lucru se întâmplă din cauza faptului că fiecare
+                topologie şi arhitectură de reţea are propriile sale limite.
+                Reţeaua va avea mai mulţi utilizatori care vor partaja fişiere de dimensiuni mari, vor accesa
+                fişiere de pe servere, sau se vor conecta la Internet.
+                Atunci când operaţiile de tipărire necesită un timp îndelungat de aşteptare (imprimantă
+                partajată), sau aplicaţiile care generează un trafic intens răspund din ce în ce mai greu, apare
+                ceea ce se numeşte congestie, care se manifestă prin timpi mai mari de răspuns şi perioade mai
+                mari, la transferuri de fişiere, întârzieri mari.
+                Există anumite componente pe care le poate instala un administrator de reţea cu scopul
+                de a extinde o reţea, a reuni două sau mai multe reţele LAN separate,sau a segmenta o reţea
+                LAN existentă, astfel încât fiecare segment să devină o reţea LAN separată. Principalul motiv
+                pentru a segmenta un LAN este de a izola traficul între segmente şi de a obţine mai multă lăţime
+                de bandă pentru fiecare utilizator prin crearea unor domenii de coliziune mai mici ( rezultă
+                decongestionarea reţelei).
+                </p>
+			<p class="documentation">Bazele de date NoSQL nu au schemă şi nu stochează date relaţionale. Ele ridică problematici
+				importante, legate de consistenţă, durabilitate/persistenţă şi gestiunea versiunilor.
+				La ora actuală există următoarele categorii de baze de date NoSQL:</p>
+				<ol class="list">
+					<li>Key-/Value-stores – cel mai simplu model pentru date nestructurate. Foarte eficient
+						şi flexibil. Dezavantaj: datele nu conţin descrierea lor.</li>
+					<li>Document databases – pentru depozite XML şi obiecte care se autodescriu. </li>
+					<li>Column-Oriented Databases (Baze de date pe coloane) – model foarte bun folosit
+						în cadrul depozitelor de date pentru date rarefiate. Putem avea coloane grupate şi
+						agregate.</li>
+					<li>Graf [Oracle 2012] – un model relativ nou, bun pentru parcurgerea relaţiilor, dar nu
+						pentru căutări generale.</li>
+				</ol>
+		</div>
+	</div>
+</div>

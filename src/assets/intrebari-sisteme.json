@@ -1,0 +1,138 @@
+{
+	"questions":[{
+		"questionText":"Ce este un proces?",
+		"options":[{
+			"text": "Un program în execuţie.",
+			"correct":"true"
+		},
+		{
+			"text":"Un sistem complex"
+			
+		},
+		{
+			"text":"O grupare de resurse înrudite"
+		}]
+		
+	},
+	{
+		"questionText":"Ce este un fir de excuţie?",
+		"options":[{
+			"text":"Este un thread care are un contor de program care ţine evidenţa următoarei instrucţiuni de executa",
+			"correct":"true"
+		},
+		{
+			"text":"Este o grupare de resurse."
+		},
+		{
+			"text": "Este o procedură apelată din care nu s-a revenit încă."
+		}]
+		
+	},
+	{
+		"questionText":"De la ce vine abrevierea NTFS?",
+		"options":[{
+			"text":"File Allocation Table"
+		},
+		{
+			"text":"Extended File Sistem"
+		},
+		{
+			"text":"New Technology File System.",
+			"correct": "true"
+		}]
+		
+	},
+	{
+		"questionText":"De la ce vine abrevierea FAT?",
+		"options":[{
+			"text":"File Allocation Table",
+			"correct":"true"
+		},
+		{
+			"text":"Hierarchical File System"
+		},
+		{
+			"text":"High Performance File System"
+		}]
+	},
+	{
+		"questionText":"Câte tipuri de memorie există?",
+		"options":[{
+			"text":"2",
+			"correct":"true"
+		},
+		{
+			"text":"4"
+		},
+		{
+			"text":"5"
+		}]
+	},
+	{
+		"questionText":"Câte tipuri de RAID sunt?",
+		"options":[{
+			"text":"3",
+			"correct":"true"
+		},
+		{
+			"text":"6 "
+		},
+		{
+			"text":"4"
+		}]
+	},
+	{
+		"questionText":"Ce este RAID 1?",
+		"options":[
+		{
+			"text":"Este cea mai performantă metodă de stocare RAID."
+		},
+		{
+			"text":"Este tipul de RAID care are redundanță de nivel N+1."
+		},
+		{	"text":"Este oglindirea dispozitivelor (mirroring).",
+			"correct":"true"}]
+	},
+	{
+		"questionText":"Ce este RAID 5?",
+		"options":[{
+			"text":"Este tipul de RAID care are redundanță de nivel N+1",
+			"correct":"true"
+			
+		},
+		{
+			"text":"Este oglindirea dispozitivelor."
+		},
+		{
+			"text":"Este tipul de RAID cu număr par de discuri."
+		}]
+	},
+	{
+		"questionText":"Ce este un firewall?",
+		"options":[{
+			"text":"Este un dispozitiv de securitate cibernetică, care filtrează și monitorizează fiecare venire și plecare de pe banda de lățime a rețelei de internet.",
+			"correct":"true"
+		},
+		{
+			"text":"Este trimiterea unui număr mare de mesaje electronice către un server cu scopul de a epuiza spaţiul de pe disc şi lăţimea de bandă."
+		
+		},
+		{
+			"text":"Este un alt fel de atac DOS răspândit"
+		}]
+	},
+	{
+		"questionText":"Câte tipuri de atacuri există?",
+		"options":[{
+			"text":"3",
+			"correct":"true"
+		},
+		{
+			"text":"2"
+		},
+		{
+			"text":"5"
+		}]
+	}]
+	
+}

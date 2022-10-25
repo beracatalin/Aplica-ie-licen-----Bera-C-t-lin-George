@@ -1,0 +1,66 @@
+<div class="modal-container">
+	<div class="modal-close">
+		<button class="modal-btn-close" (click)="closeModal()">x</button>
+	</div>
+	<div  class="modal-title">
+		<h3><b>ALGORITMI și STRUCTURI DE DATE</b></h3>
+	</div>
+	<div>
+	<div class="modal-body">
+	<p class="documentation"> &nbsp;&nbsp;&nbsp;&nbsp; Un algoritm este o procedură de calcul bine definită care primeşte o valoare sau o mulţime de valori ca date de intrare şi  produce o valoare sau mulţime de valori ca date de ieşire. Este deci un şir de paşi care transformă datele de intrare în date de ieşire.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;<b>Datele de intrare (inputul)</b> îl reprezintă o secvenţă de n numere (a<sup>1</sup>, a<sup>2</sup>, ... a&#x207F;).<br> &nbsp;&nbsp;&nbsp;&nbsp;<b>Datele de ieşire (outputul)</b> îl reprezintă o permutare (sau o reordonare) (a<sup>1</sup>, a<sup>2</sup>,...a&#x207F;) a secvenţei de numere furnizată la intrare astfel încât a<sup>1</sup> &#60; a<sup>2</sup> &#60; ...&#60; a&#x207F;.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Un algoritm se spune că este corect dacă pentru orice secvență de intrare care satisface condițiile problemei va produce la ieșire un rezultat (output) corect. <br>&nbsp;&nbsp;&nbsp;&nbsp; Spunem că algoritmul respectiv rezolvă problema computațională furnizată. O structură de date reprezintă un mod de a organiza și stoca datele astfel încât să facilităm accesul la ele și modificarea acestora.<br>&nbsp;&nbsp;&nbsp;&nbsp; Pseudocodul este o modalitate de a descrie algoritmi; este similar cu schemele logice. Un algoritm descris în pseudocod poate apoi să fie implementat în orice limbaj de programare (C, Pascal etc).</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Sortarea este o operaţie des întâlnită în rezolvarea problemelor de natură algoritmică. Problema sortării unei mulţimi de obiecte se poate reduce la problema sortării cheilor asociate acestora. După ce cheile sunt sortate, folosind informaţia de asociere (care leagă cheia de obiectul căreia îi aparţine), se pot rearanja obiectele în ordinea în care au fost aranjate cheile lor.<br> &nbsp;&nbsp;&nbsp;&nbsp; O metodă de sortare se spune că este stabilă dacă după sortare, ordinea relativă a elementelor cu chei egale coincide cu cea iniţială, element esenţial în special în cazul în care se execută sortarea după mai multe chei.<br>&nbsp;&nbsp;&nbsp;&nbsp;O cerinţă fundamentală care se formulează faţă de metodele de sortare a tablourilor se referă la utilizarea cât mai economică a zonei de memorie disponibile. Astfel, algoritmii care utilizează doar zona de memorie alocată tabloului, fără a fi necesar un tablou suplimentar se numesc sortări "in situ". </p> 
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp; Ideea <b>sortării prin inserție </b> este următoarea:</p>
+	<ol class="list">
+	<li>Pornim cu un șir gol de numere.</li>
+	<li>Luăm câte un număr din șirul inițial și îl plasăm în şirul sortat la poziția corespunzătoare.</li>
+	<li>Plasarea numărului în șir la poziția corespunzătoare se face prin comparare succesivă de la stânga la dreapta sau invers.</li>
+	</ol>
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp; Numită şi<b> divide et impera (divide şi stăpâneşte) </b>, aceasta este o tehnică sau o metodă de programare în care:</p>
+	<ol class="list">
+	<li>problema iniţială se sparge în subprobleme cu structură similară cu problema originală, dar de dimensiune mai mică. </li>
+	<li>aceste subprobleme sunt rezolvate recursiv.</li>
+	<li>soluţiile recursive sunt combinate pentru a produce soluţia problemei iniţiale.</li>
+	</ol>
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp; <b>Sortarea prin interclasare </b> se bazează pe următorul principiu: pentru a sorta un vector cu n elemente, îl împărţim în 2 vectori, care, odată sortaţi, se interclasează. Conform strategiei Divide and Conquer, descompunerea unui vector în alţi doi vectori care urmează a fi sortaţi are loc până când avem de sortat vectori de un element.<br>&nbsp;&nbsp;&nbsp;&nbsp; Sortarea prin interclasare are deci 3 paşi: </p>
+	<ol class="list">
+	<li>Divide - şirul A de n elemente se împarte în două subşiruri de n/2 elemente (în cazul în care n este impar dimensiunea primului şir este cu 1 mai mare decât dimensiunea celui de al doilea şir)</li>
+	<li>Conquer - se sortează recursiv cele două subşiruri</li>
+	<li>Combine - se combină prin interclasare cele două şiruri sortate obţinute la pasul Conquer, rezultând un singur şir sortat</li>
+	</ol>
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp;<b>Heap Sort</b> sau <b>Sortarea prin metoda ansamblelor</b> este cunoscută şi sub denumirea de “sortare pe bază de arbore”, deoarece vectorul de sortat, organizat ca o movilă, corespunde unui arbore. Heapsort utilizează o structură de date numită heap.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Un heap (o movilă) este un vector care poate fi vizualizat sub forma unui arbore binar aproape complet cu proprietatea că cheia fiecărui nod din arbore este mai mare decât cheile descendenţilor (deci fiecare nod are o cheie mai mică sau egală cu cea a tatălui său). Ultimul rând al arborelui se completează de la stânga la dreapta.</p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; <b>Tehnicile de programare</b> sunt modalităţi generale de elaborare a algoritmilor. Ele reprezintă doar nişte tipare de organizare a acţiunilor ("scheme" de algoritmi), nu garantează şi succesul acestora. Pentru a avea succes trebuie îndeplinite nişte condiţii suplimentare, care sunt specifice şi se demonstrează separat pentru fiecare problemă în parte.</p>
+	<br>
+	<p class="sort">&nbsp;&nbsp;&nbsp;&nbsp;<b>Quick Sort</b> este un algoritm de sortare (inventat de Tony Hoare ȋn 1962) care pentru un şir de n elemente are un timp de execuţie  în cazul cel mai defavorabil. În ciuda acestei comportări proaste pentru cazul cel mai defavorabil, acest algoritm este deseori cea mai bună soluţie practică deoarece are o comportare medie remarcabilă.<br>&nbsp;&nbsp;&nbsp;&nbsp;Algoritmul Quick Sort se bazează pe tehnica de programare “Divide and Conquer”, bazându-se pe următorii 3 paşi: </p>
+	<ol class="list">
+	<li><i>Divide</i>: Şirul A[p..r] este împărţit (rearanjat) în două subşiruri nevide A[p..q-1] şi A[q+1..r] astfel încât fiecare element al subşirului A[p..q-1] să fie mai mic sau egal cu A[q] (element denumit element pivot) şi orice element al subsirului A[q+1..r] este mai mare sau egal cu A[q]. Indicele q este calculat de procedura de partiţionare. Deci elementele mai mici decât pivotul vor fi mutate în stânga pivotului iar elementele mai mari decât pivotul vor fi mutate în dreapta pivotului.</li>
+	<li><i>Conquer</i>: Cele două subşiruri A[p..q-1] şi A[q+1..r] sunt sortate prin apeluri recursive ale algoritmului de sortare rapidă.</li>
+	<li><i>Combine</i>: Cele două subşiruri sunt sortate pe loc, nu este nevoie de nici o combinare, şirul A[p..r] este ordonat.</li>
+	</ol>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;<b>Algoritmul de partiționare a unui șir în cazul Quick-Sort</b></p>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;Un algoritm se numeşte aleator dacă comportarea lui depinde nu numai de valorile de intrare ci şi de valorile produse de un generator de numere aleatoare. Vom presupune că dispunem de un generator de numere aleatoare numit RANDOM. Un apel al procedurii RANDOM(p,r) va produce un număr întreg aleator între p şi r (inclusiv). Fiecare număr întreg din acest interval va avea aceeaşi probabilitate de apariţie.<br>&nbsp;&nbsp;&nbsp;&nbsp; În Quick Sort vom selecta aleator un element din subşirul A[p..r] care va juca rolul pivotului. La fiecare pas al sortării rapide, înainte de partiţionarea vectorului vom interschimba elementul A[p] cu acest element aleator ales. Practic, această modificare a algoritmului asigură că elementul pivot x=A[p] să fie cu aceeaşi probabilitate orice element dintre cele r-p+1 elemente ale vectorului A[p..r]. Rezultatul este că partiţionarea vectorului de intrare va fi în medie, rezonabil de echilibrată. Modificările în algoritmul deja prezentat sunt minore. Vom avea implementată schimbarea elementului ce va deveni pivot înainte de apelul propriu zis al procedurii PARTITION.</p>
+	<p class="documentation"><b>Algoritmul de alegere aleatoare a elementului pivot:</b></p>
+	<ol class="quick-sort">
+		<li>i <i class="bi bi-arrow-left"></i>RANDOM(p,r)</li>
+		<li>exchange A[r]<i class="bi bi-arrow-left-short"></i><i class="bi bi-arrow-right-short"></i>A[i]</li>
+		<li>return PARTITION(A,p,r)</li>
+	</ol>
+	<p class="documentation"><b>Algoritmul de alegere aleatoare a elementului pivot pentru QUICK-SORT</b></p>
+	<p class="documentation">De asemenea, noua procedură <b>QUICKSORT</b> va apela procedura <b>RANDOMIZED-PARTTION</b> în loc de vechea procedură PARTITION.</p>
+	<ol class="quick-sort">
+		<li>if p &#60; r</li>
+		<li>then q <i class="bi bi-arrow-left"></i> RANDOMIZED-PARTITION(A, p, r)</li>
+		<li>&nbsp;&nbsp; RANDOMIZED-QUICKSORT(A, p, q &minus; 1)</li>
+		<li>&nbsp;&nbsp; RANDOMIZED-QUICKSORT(A, q &plus; 1, r)</li>
+	</ol>
+	<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; <b>Metoda Greedy (greedy = lacom)</b> este o metodă generală de proiectare a algoritmilor care constă în construirea soluţiei globale optimale printr-un şir de soluţii cu caracter de optim local atunci când este posibilă exprimarea “optimului global” ca o combinaţie de o “optime locale”. Algoritmii greedy sunt în general simpli şi sunt folositi la probleme de optimizare, cum ar fi: să se găsească cea mai bună ordine de executare a unor lucrări, să se găsească cel mai scurt drum într-un graf etc.</p>
+	<p class="documentation"><b>Programarea dinamică</b> este o tehnică de proiectare a unui algoritm care permite rezolvarea unei clase de probleme. Programarea dinamică, la fel ca şi metoda Divide and Conquer, rezolvă problemele combinând soluţiile unor subprobleme. Spre deosebire de abordarea din Divide and Conquer, programarea dinamică este aplicabilă atunci când subproblemele nu sunt independente, adică subproblemele au în comun sub-subprobleme. Astfel, un algoritm de tipul Divide and Conquer ar presupune mai multe calcule decât ar fi necesar dacă s-ar rezolva repetat aceste sub-subprobleme comune.</p>
+</div>
+</div>
+</div>

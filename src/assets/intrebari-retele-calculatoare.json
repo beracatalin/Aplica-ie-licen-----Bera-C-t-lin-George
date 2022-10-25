@@ -1,0 +1,154 @@
+{
+	"questions": [
+		{
+			"questionText": "Din ce este compusă o rețea?",
+			"options": [
+				{
+					"text": "Dintr-un noduri și legături.",
+					"correct": "true"
+				},
+				{
+					"text": "Din noduri."
+				},
+				{
+					"text": "Din legături."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este un protocol?",
+			"options": [
+				{
+					"text": "Este un set de reguli care gestionează modul în care două noduri dintr-o reţea schimbă informaţii, la acelaşi nivel.",
+					"correct": "true"
+				},
+				{
+					"text": "Este un set de reguli care gestionează modul în care două noduri dintr-o reţea schimbă informaţii, la nivele diferite."
+				},
+				{
+					"text": "Reprezintă un grup de protocoale ce comunică între ele prin funcţii riguros definite."
+				}
+			]
+		},
+		{
+			"questionText": "Câte nivele funcționale prezintă Modelul de referință ISO/OSI?",
+			"options": [
+				{
+					"text": "7",
+					"correct": "true"
+				},
+				{
+					"text": "3"
+				},
+				{
+					"text": "1"
+				}
+			]
+		},
+		{
+			"questionText": "Ce este UDP?",
+			"options": [
+				{
+					"text": "Este un protocol de tip datagramă care lucrează fără stabilire de conexiune, transmiţând date între două procese.",
+                    "correct":"true"
+				},
+				{
+					"text": "Este un protocol sigur."
+				},
+				{
+					"text": "Este cel mai sigur protocol."
+				}
+			]
+		},
+		{
+			"questionText": "Ce înseamnă abrevierea ARP?",
+			"options": [
+				{
+					"text": "Adress Resolution Protocol.",
+					"correct": "true"
+				},
+				{
+					"text": "Adress Rezolusion Protocol."
+				},
+				{
+					"text": "Adress Resolution Partition"
+				}
+			]
+		},
+		{
+			"questionText": "Ce este Telnet?",
+			"options": [
+				{
+					"text": "Este un protocol pentru legarea de calculatoare aflate la distanţă.",
+					"correct": "true"
+				},
+				{
+					"text": "Este un protocol pentru legarea securizată de calculatoare aflate la distanţă."
+				},
+				{
+					"text": "Este un protocol pentru transferul fişierelor."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este HTTP?",
+			"options": [
+				{
+					"text": "Este un protocol securizat pentru accesarea documentelor Web."
+				},
+				{
+					"text": "Este un protocol pentru gestionarea reţelei."
+				},
+				{
+					"text": "Este un protocol pentru accesarea documentelor Web.",
+					"correct": "true"
+				}
+			]
+		},
+		{
+			"questionText": "Unde începe procesul de creare a pachetelor?",
+			"options": [
+				{
+					"text": "La nivelul aplicație.",
+					"correct": "true"
+				},
+				{
+					"text": "La nivelul transport."
+				},
+				{
+					"text": "La nivelul fizic."
+				}
+			]
+		},
+		{
+			"questionText": "Ce conține cadrul Ethernet?",
+			"options": [
+				{
+					"text": "Două adrese.",
+					"correct":"true"
+				},
+				{
+					"text": "O adresă."
+				},
+				{
+					"text": "Un câmp."
+				}
+			]
+		},
+		{
+			"questionText": "Ce șablon de biți conține cadrul Ethernet?",
+			"options": [
+				{
+					"text": "10101010.",
+					"correct": "true"
+				},
+				{
+					"text": "11111111."
+				},
+				{
+					"text": "11001100."
+				}
+			]
+		}
+	]
+}

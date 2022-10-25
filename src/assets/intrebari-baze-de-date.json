@@ -1,0 +1,154 @@
+{
+	"questions": [
+		{
+			"questionText": "Ce este o bază de date?",
+			"options": [
+				{
+					"text": "Un sistem integrat, coerent şi partajat de fişiere.",
+					"correct": "true"
+				},
+				{
+					"text": "Este proprietatea unei informaţii de a se repeta nejustificat."
+				},
+				{
+					"text": "Reprezintă o problemă de asemenea foarte spinoasă."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este un model?",
+			"options": [
+				{
+					"text": "O reprezentare a obiectelor lumii reale şi a evenimentelor asociate lor",
+					"correct": "true"
+				},
+				{
+					"text": "Este un set de reguli de manipulare a datelor."
+				},
+				{
+					"text": "Este un set de reguli de structurare a datelor."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este redundanța?",
+			"options": [
+				{
+					"text": "este proprietatea unei informaţii de a se repeta nejustificat; de exemplu codul materialelor, care poate ajunge la 20-30 de cifre, se repetă în majoritatea acestor fişiere, mărind nejustificat spaţiul fizic ocupat",
+					"correct": "true"
+				},
+				{
+					"text": "Reprezintă o problemă de asemenea foarte spinoasă. Datele aflându-se în fişiere disparate, acestea pot fi reţinute de proprietari, nefiind disponibile şi comunităţii utilizatorilor. De asemenea, neexistând un control centralizat asupra lor, nu se poate asigura securitatea acestora."
+				},
+				{
+					"text": "Este o serie de dezavantaje."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este inconștiența?",
+			"options": [
+				{
+					"text": "Proprietatea unei informaţii de a se repeta nejustificat."
+				},
+				{
+					"text": "Este legată de apariţia distorsionată a unor informaţii în diferite contexte; una dintre cauzele inconsistenţei este redundanţa, deoarece este suficient ca la o apariţie (copie) a informaţiei redundante, aceasta să fie introdusă greşit şi informaţia poate deveni inconsistentă",
+					"correct":"true"
+				},
+				{
+					"text": "Este una dintre funcțiile principale ale unui SGBD."
+				}
+			]
+		},
+		{
+			"questionText": "Ce înseamnă abrevierea SGBD?",
+			"options": [
+				{
+					"text": "Sistem de gestiune a bazelor de date.",
+					"correct": "true"
+				},
+				{
+					"text": "Data Base Management System."
+				},
+				{
+					"text": "Sistem de generare a bazelor de date."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este schema relaționară unei baze de date?",
+			"options": [
+				{
+					"text": "Este un ansamblu de relaţii asociate semantic prin domeniul de definiţie şi prin restricţii de integritate",
+					"correct": "true"
+				},
+				{
+					"text": "Este o structură organizată în vederea realizării unor produse sau servicii "
+				},
+				{
+					"text": "Este o operaţie des întâlnită în rezolvarea problemelor de natură algoritmică."
+				}
+			]
+		},
+		{
+			"questionText": "Care este definiția BCNF?",
+			"options": [
+				{
+					"text": "O relaţie este în 3NF dacă orice determinant este o cheie (primară sau candidat)."
+				},
+				{
+					"text": "O relaţie este în 3NF dacă este în 2NF şi nu există dependenţe funcţionale între atributele care nu fac parte din cheie."
+				},
+				{
+					"text": "O relaţie R este în BCNF dacă pentru orice mulţime de atribute A pentru care există un atribut din C(A), unde C(A) este mulţimea atributelor din R care nu fac parte din A şi care depind funcţional de A, are loc proprietatea că orice atribut din R depinde funcţional de A.",
+					"correct": "true"
+				}
+			]
+		},
+		{
+			"questionText": "Ce înseamnă abrevierea LMD?",
+			"options": [
+				{
+					"text": "Limbajul de manipulare a datelor.",
+					"correct": "true"
+				},
+				{
+					"text": "Limbajul de descriere a datelor."
+				},
+				{
+					"text": "Limbajul de consultare."
+				}
+			]
+		},
+		{
+			"questionText": "Cum se definește nivelul intern a unei baze de date?",
+			"options": [
+				{
+					"text": "Este nivelul care defineşte baza de date ca fiind o colecţie de fişiere, conţinând datele din cadrul bazei de date, la care se adaugă şi alte structuri auxiliare de date şi un set de programe, care interacţionează cu sistemul de operare pentru îmbunătăţirea managementului bazei de date",
+					"correct":"true"
+				},
+				{
+					"text": "Este nivelul imediat superior celui fizic, datele fiind privite prin prisma semanticii lor, respectiv a conţinutului şi relaţiilor cu alte date"
+				},
+				{
+					"text": "Se defineşte ca fiind o mulţime de entităţi (unităţi logice) rezultată din reuniunea entităţilor aferente unor categorii de utilizatori, în vederea realizării unei viziuni globale asupra bazei de date. În acest scop, entităţile sunt legate prin relaţii, care exprimă semantica organizării datelor"
+				}
+			]
+		},
+		{
+			"questionText": "Ce permite funcția de descriere de date?",
+			"options": [
+				{
+					"text": "Permite descrierea structurii datelor şi a legăturilor dintre entităţi.",
+					"correct": "true"
+				},
+				{
+					"text": "Permite crearea, consultarea (interogarea) şi actualizarea bazei de date."
+				},
+				{
+					"text": "Permite comunicarea dintre utilizator şi baza de date prin intermediul unei interfeţe cât mai simple şi mai apropiate de utilizator"
+				}
+			]
+		}
+	]
+}

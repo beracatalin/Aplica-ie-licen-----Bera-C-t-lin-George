@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<link rel="stylesheet/css" href="intrebari-sisteme.component.css">
+<body>
+	<div class="container mt-5">
+		<div class="card">
+			<div class="d-flex justify-content-between p-3">
+				<div *ngIf="!isQuizCompleted" class="quiz-header">
+					<h4 class="quiz-title">Sisteme de Operare</h4>
+					<span class="welcome">Bine ai venit, {{name}}!</span>
+					
+				</div>
+			</div>
+			<ng-container *ngIf="!isQuizCompleted">
+				<div class="d-flex justify-content-around py-3">
+					<div class="score">
+					<h5>{{points}} Puncte</h5>
+					</div>
+					<div class="question-remain">
+						<span class="remaining">Întrebarea {{currentQuestion+1}} din {{questionList.length}}</span>
+					</div>
+					<div class="timer">
+						<h5>{{counter}} sec <i class="bi bi-clock"></i></h5>
+					</div>
+					<button mat-raised-button type="button" (click)="openDialog()">Documentatie</button>
+				</div>
+				<div class="progress mb-3">
+					<div class="progress-bar progress-bar-striped bg-info" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="question">
+					<div class="card">
+						<h3>{{questionList[currentQuestion]?.questionText}}</h3>
+					</div>
+				</div>
+				<div class="options">
+					<ol *ngFor="let option of questionList[currentQuestion]?.options">
+						<li (click)="answer(currentQuestion, option)">
+						<div appChangeBg [isCorrect]="option.correct" class="card">
+							{{option.text}}
+						</div>
+						</li>
+					</ol>
+				</div>
+				<div class="d-flex justify-content-between">
+					<button [disabled]="currentQuestion===0" class="btn" (click)="previousQuestion()"><i class="bi text-primary bi-chevron-left" aria-hidden="true"></i></button>
+					<button class="btn" (click)="resetQuiz()"><i class="bi text-primary bi-arrow-clockwise" aria-hidden="true"></i></button>
+					<button [disabled]="currentQuestion===questionList.length-1" class="btn" (click)="nextQuestion()"><i class="bi text-primary bi-chevron-right" aria-hidden="true"></i></button>
+				</div>
+			</ng-container>
+			<ng-container *ngIf="isQuizCompleted && points >= 5">
+				<div class="row d-flex justify-content-between">
+					<div class="result text-center col-md-6 col-sm-12">
+						<h3>Felicitări, {{name}}!!! Ai trecut testul. <br> Mai jos sunt rezultatele tale:</h3>
+						<p>Total întrebări: {{questionList.length}}</p>
+						<p>Total întrebări corecte: {{correctAnswer}}</p>
+						<p>Total întrebări incorecte: {{incorrectAnswer}}</p>
+						<p>Total puncte: {{points}} puncte</p>
+						<button class="btn btn-info" type="submit" routerLink="/">Următoarea materie</button>
+					</div>
+				</div>
+			</ng-container>
+			<ng-container *ngIf="isQuizCompleted && points < 5">
+				<div class="row d-flex justify-content-between">
+					<div class="result text-center col-md-6 col-sm-12">
+						<h3>Ne pare rău, {{name}}!!! Nu ai trecut testul. <br> Mai jos sunt rezultatele tale:</h3>
+						<p>Total întrebări: {{questionList.length}}</p>
+						<p>Total întrebări corecte: {{correctAnswer}}</p>
+						<p>Total întrebări incorecte: {{incorrectAnswer}}</p>
+						<p>Total puncte: {{points}} puncte</p>
+					</div>
+					<button class="btn btn-outline-secondary fail" routerLink="/sisteme-de-operare"><i class="bi bi-chevron-left"></i> Înapoi la materie</button>
+				</div>
+			</ng-container>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,136 @@
+{
+	"questions":[{
+		"questionText":"Ce este un algoritm?",
+		"options":[{
+			"text": "O secvență de n numere."
+		},
+		{
+			"text":"O procedură de calcul bine definită.",
+			"correct":"true"
+		},
+		{
+			"text":"O permutare a secvenței de numere furnizată la intrare."
+		}]
+		
+	},
+	{
+		"questionText":"Cum se defineşte operaţia de sortare?",
+		"options":[{
+			"text":"Este o operaţie des întâlnită în rezolvarea problemelor de natură algoritmică.",
+			"correct":"true"
+		},
+		{
+			"text":"Este o tehnică sau o metodă de programare."
+		},
+		{
+			"text": "Este un vector care poate fi vizualizat sub forma unui arbore binar aproape complet cu proprietatea că cheia fiecărui nod din arbore este mai mare decât cheile descendenţilor."
+		}]
+		
+	},
+	{
+		"questionText":"Când spunem despre o metodă de sortare că este “in situ”?",
+		"options":[{
+			"text":"Dacă după sortare, ordinea relativă a elementelor cu chei egale coincide cu cea iniţială, element esenţial în special în cazul în care se execută sortarea după mai multe chei."
+		},
+		{
+			"text":"Dacă algoritmii care utilizează doar zona de memorie alocată tabloului, fără a fi necesar un tablou suplimentar.",
+			"correct": "true"
+		},
+		{
+			"text":"Dacă un algoritm descris în pseudocod poate apoi să fie implementat în orice limbaj de programare."
+		}]
+		
+	},
+	{
+		"questionText":"Când spunem despre o metodă de sortare că este stabilă?",
+		"options":[{
+			"text":"Dacă după sortare, ordinea relativă a elementelor cu chei egale coincide cu cea iniţială, element esenţial în special în cazul în care se execută sortarea după mai multe chei.",
+			"correct":"true"
+		},
+		{
+			"text":"Dacă după sortare, ordinea relativă a elementelor cu chei egale NU coincide cu cea iniţială, element esenţial în special în cazul în care se execută sortarea după mai multe chei."
+		},
+		{
+			"text":"Dacă după sortare, ordinea absolută a elementelor cu chei egale coincide cu cea iniţială, element esenţial în special în cazul în care se execută sortarea după mai multe chei."
+		}]
+	},
+	{
+		"questionText":"În care din urmatoarele condiţii se poate aplica metoda Divide and Conquer?",
+		"options":[{
+			"text":"Dacă se poate descompune în două sau mai multe subprobleme.",
+			"correct":"true"
+		},
+		{
+			"text":"Dacă subproblemele sunt dependete una față de cealaltă."
+		},
+		{
+			"text":"Dacă subproblemele NU se pot soluționa imediat prin algoritmul simplificat."
+		}]
+	},
+	{
+		"questionText":"Ce este un heap?",
+		"options":[{
+			"text":"Este un vector care poate fi vizualizat sub forma unui arbore binar aproape complet cu proprietatea că cheia fiecărui nod din arbore este mai mare decât cheile descendenţilor.",
+			"correct":"true"
+		},
+		{
+			"text":"Este un algoritm de sortare care pentru un şir de n elemente are un timp de execuţie. "
+		},
+		{
+			"text":"Este o operaţie des întâlnită în rezolvarea problemelor de natură algoritmică."
+		}]
+	},
+	{
+		"questionText":"Ce este HeapSort?",
+		"options":[
+		{
+			"text":"Un vector care poate fi vizualizat sub forma unui arbore binar aproape complet cu proprietatea că cheia fiecărui nod din arbore este mai mare decât cheile descendenţilor."
+		},
+		{
+			"text":"Este o tehnică sau o metodă de programare."
+		},
+		{	"text":"Este cunoscută şi sub denumirea de “sortare pe bază de arbore”, deoarece vectorul de sortat, organizat ca o movilă, corespunde unui arbore.",
+			"correct":"true"}]
+	},
+	{
+		"questionText":"Ce este sortarea rapidă(Quick Sort)?",
+		"options":[{
+			"text":"Este un algoritm de sortare care pentru un şir de n elemente are un timp de execuţie Θ în cazul cel mai defavorabil.",
+			"correct":"true"
+			
+		},
+		{
+			"text":"Este o modalitate generală de elaborare a algoritmilor."
+		},
+		{
+			"text":"Este o metodă generală de proiectare a algoritmilor care constă în construirea soluţiei globale optimale printr-un şir de soluţii cu caracter de optim local."
+		}]
+	},
+	{
+		"questionText":"Ce este sortarea prin inserție?",
+		"options":[{
+			"text":"Este sortarea unde luăm câte două numere din șirul inițial și le plasăm în şirul sortat la poziția corespunzătoare."
+		},
+		{
+			"text":"Este o sortare unde se pornește de la un șir gol de numere.",
+			"correct":"true"
+		},
+		{
+			"text":"Este sortarea unde plasarea numărului în șir la poziția corespunzătoare se face prin comparare aleatorie."
+		}]
+	},
+	{
+		"questionText":"Ce sunt tehnicile de programare?",
+		"options":[{
+			"text":"Sunt modalităţi generale de elaborare a algoritmilor. Ele reprezintă doar nişte tipare de organizare a acţiunilor ('scheme' de algoritmi), nu garantează şi succesul acestora.",
+			"correct":"true"
+		},
+		{
+			"text":"Sunt tehnici de proiectare a unui algoritm care permite rezolvarea unei clase de probleme."
+		},
+		{
+			"text":"Presupun mai multe calcule decât ar fi necesar dacă s-ar rezolva repetat aceste sub-subprobleme comune."
+		}]
+	}]
+	
+}

@@ -1,0 +1,154 @@
+{
+	"questions": [
+		{
+			"questionText": "Ce reprezintă rdfs:Resource?",
+			"options": [
+				{
+					"text": "Reprezintă mulțimea tuturor lucrurilor.",
+					"correct": "true"
+				},
+				{
+					"text": "Reprezintă mulțimea tuturor resurselor."
+				},
+				{
+					"text": "Reprezintă mulțimea tuturor claselor."
+				}
+			]
+		},
+		{
+			"questionText": "Ce reprezintă rdf:Property?",
+			"options": [
+				{
+					"text": "Mulțimea tuturor proprietăților.",
+					"correct": "true"
+				},
+				{
+					"text": "Mulțimea tuturor lucrurilor."
+				},
+				{
+					"text": "Mulțimea tuturor persoanelor."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este rdfs:subClassOf?",
+			"options": [
+				{
+					"text": "Este o relație ce exprimă relația de incluziune dintre mulțimi.",
+					"correct": "true"
+				},
+				{
+					"text": "Este proprietatea standard prin care atașăm denumiri de tip string entităților menționate în grafuri."
+				},
+				{
+					"text": "Reprezintă verbul „a fi” la singular."
+				}
+			]
+		},
+		{
+			"questionText": "Ce este rdfs:subPropertyOf?",
+			"options": [
+				{
+					"text": "Este o relație ce exprimă relația de specializare dintre proprietăți.",
+                    "correct":"true"
+				},
+				{
+					"text": "Este o relație ce exprimă relația de incluziune dintre mulțimi."
+				},
+				{
+					"text": "Este mulțimea tuturor proprietăților."
+				}
+			]
+		},
+		{
+			"questionText": "Ce reprezintă rdfs:member?",
+			"options": [
+				{
+					"text": "Reprezintă relația de descompunere dintre o entitate complexă și părțile sale.",
+					"correct": "true"
+				},
+				{
+					"text": "Prin acest termen se declară echivalențe între instanțe."
+				},
+				{
+					"text": "Este folosit în situațile în care dorim să enumerăm mai multe obiecte pentru aceeași proprietate."
+				}
+			]
+		},
+		{
+			"questionText": "La ce se folosește SELECT în MySQL?",
+			"options": [
+				{
+					"text": "Se folosește pentru a selecta unul sau mai multe elemente din tabel.",
+					"correct": "true"
+				},
+				{
+					"text": "Se folosește pentru a șterge unul sau mai multe elemente din tabel.."
+				},
+				{
+					"text": "Se folosește pentru a modifica unul sau mai multe elemente din tabel.."
+				}
+			]
+		},
+		{
+			"questionText": "Pentru ce se folosește PREFIX?",
+			"options": [
+				{
+					"text": "Pentru indicarea subiectului propozițiilor."
+				},
+				{
+					"text": "Pentru declararea tipului subiectului."
+				},
+				{
+					"text": "Pentru declararea prefixelor.",
+					"correct": "true"
+				}
+			]
+		},
+		{
+			"questionText": "Pentru ce se folosește ABOUT?",
+			"options": [
+				{
+					"text": "Pentru indicarea subiectului propozițiilor.",
+					"correct": "true"
+				},
+				{
+					"text": "Pentru atribute."
+				},
+				{
+					"text": "Pentru declararea tipului subiectului."
+				}
+			]
+		},
+		{
+			"questionText": "Ce reprezintă ITEMID în RDFa?",
+			"options": [
+				{
+					"text": "Reprezintă subiectul.",
+					"correct":"true"
+				},
+				{
+					"text": "Reprezintă tipul subiectului."
+				},
+				{
+					"text": "Reprezintă un atribut boolean"
+				}
+			]
+		},
+		{
+			"questionText": "Similar cu ce este ITEMTYPE?",
+			"options": [
+				{
+					"text": "Similar cu TYPEOF.",
+					"correct": "true"
+				},
+				{
+					"text": "Similar cu ABOUT."
+				},
+				{
+					"text": "Similar cu PROPERTY și REL"
+				}
+			]
+		}
+	]
+}

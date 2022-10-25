@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width initial-scale=1.0"/>
+	</head>
+	<link rel="stylesheets/css" href="quiz-web-semantic.component.css">
+	<body>
+		<div class="container">
+			<h1 class="quiz display-5 fw-bold">Quiz</h1>
+			<p class="col-md-8 fs-4">Bine ai venit la test! Vor fi <span>10 întrebări</span>. Iată câteva reguli înainte de a începe testul:</p>
+			<ol class="rules">
+				<li>Fiecare răspuns corect valorează 1 punct.</li>
+				<li>O să ai la dispoziție câte 60 de secunde pentru a răspunde la întrebare.</li>
+				<li>Dacă dai refresh, testul se va reseta.</li>
+				<li>Poți să navighezi printre întrebări.</li>
+				<li>La final ți se va afișa punctajul. Trebuie să obții minim 5 puncte pentru a putea trece la următoarea materie.</li>
+			</ol>
+			<h1 style="font-family: cursive;">Succes!</h1>
+			<form [formGroup]="nameGroup" class="name col-md-4 my-3">
+				<label>Numele tău:</label>
+				<input #name type="text" class="form-control" formControlName="name">
+			</form>
+		</div>
+		<button class="btn btn-outline-info" routerLink="/web-semantic"><i class="bi bi-chevron-left"></i> Înapoi</button>
+		<button class="btn btn-outline-primary" routerLink="/intrebari-web-semantic" (click)="startQuiz()">Începe testul<i class="bi bi-chevron-right"></i></button>
+	</body>
+</html>

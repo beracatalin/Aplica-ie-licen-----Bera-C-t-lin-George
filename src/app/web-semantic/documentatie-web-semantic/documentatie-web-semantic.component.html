@@ -1,0 +1,38 @@
+<div class="modal-container">
+	<div class="modal-close">
+		<button class="modal-btn-close" (click)="closeModal()">x</button>
+	</div>
+	<div class="modal-title">
+		<h3><b>WEB SEMANTIC</b></h3>
+	</div>
+	<div>
+		<div class="modal-body">
+			<p class="documentation"> &nbsp;&nbsp;&nbsp;&nbsp; Principiile pe care se bazează sintaxele Microdata și RDFa sunt:</p>
+            <ol class="list">
+                <li>orice porțiune a conținutului paginii poate fi marcată cu semnificația sa (de exemplu un șir de cifre poate fi marcat cu declarația că e vorba de un număr de telefon al cuiva);</li>
+                <li>porțiunea marcată devine valoarea unei proprietăți pentru un anume subiect (entitatea despre care e vorba în pagină); subiectul e marcat la rândul său acordându-i un identificator Web (URI) iar dacă nu facem asta subiectul devine nod anonim, responsabilitatea identificării sale rămâne în sarcina clientului care va culege datele (de exemplu motorul de căutare);</li>
+                <li>orice referință inclusă în pagină (atributele SRC și HREF) poate de asemenea să devină valoarea unei proprietăți;</li>
+                <li>la nevoie, se pot adăuga și proprietăți invizibile unui cititor uman, folosind tag-uri HTML care nu afectează conținutul vizibil al paginii (SPAN-uri sau DIV-uri goale, META, LINK).</li>
+            </ol>
+			<br>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp; Se observă că RDFa folosește anumite atribute HTML dedicate: </p>
+            <ol class="list">
+                <li>PREFIX pentru declararea prefixelor;</li>
+                <li>ABOUT pentru indicarea subiectului propozițiilor (entitatea despre care e vorba în interiorul unui tag HTML);</li>
+                <li>TYPEOF pentru declararea tipului subiectului;</li>
+                <li>PROPERTY pentru atribute - proprietățile ale căror valori sunt de regulă fragmente din conținutul paginii;</li>
+                <li>REL pentru relații - proprietățile ale căror valori sunt alte URI, preluate de la alte atribute ABOUT conținute;</li>
+            </ol>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;Microdata este o versiune mai primitivă și mai simplă decât RDFa – folosește aceleași principii de marcare a informației, însă atributele dedicate sunt altele: 
+			</p>
+            <ol class="list">
+                <li>ITEMID este subiectul (similar cu ABOUT);</li>
+                <li>ITEMTYPE este tipul subiectului (similar cu TYPEOF)</li>
+                <li>ITEMPROP este proprietate (similar cu PROPERTY și REL, fără a se face diferențiere);</li>
+                <li>ITEMSCOPE este un atribut boolean (valoarea sa poate fi vidă) – simpla sa prezență anunță faptul că în tag-ul curent intenționăm să încorporăm un graf despre ceva.</li>
+            </ol>
+            <br>
+			<p class="documentation">&nbsp;&nbsp;&nbsp;&nbsp;În MySQL, SELECT se folosește pentru a selecta unul sau mai multe elemente din tabel; UPDATE pentru a actualiza unul sau mai multe elemente din tabel, iar DELETE pentru a șterge elemente din tabel. </p>
+		</div>
+	</div>
+</div>
